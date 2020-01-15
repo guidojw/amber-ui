@@ -24,7 +24,9 @@ AppRouter.map(function() {
     this.route('destroy', { path: '/:id/destroy' });
   });
 
-  this.route('quickpost');
+  this.route('quickpost', function() {
+    this.route('statistics');
+  });
 
   this.route('forum', function() {
     this.route('categories', function() {
