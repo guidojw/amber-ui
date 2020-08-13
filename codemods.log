@@ -1,0 +1,62 @@
+2020-06-10T12:42:37.629Z [info] [app/models/photo-comment.js]: SUCCESS
+2020-06-10T12:42:37.805Z [info] [app/models/photo.js]: SUCCESS
+2020-06-10T12:42:37.884Z [warn] [app/models/poll.js]: FAILURE
+Validation errors:
+	[question]: Transform not supported - need option '--decorators=true' or the property type CallExpression can not be transformed
+	[question]: Transform not supported - value has modifiers like 'property' or 'meta'
+2020-06-10T12:42:37.889Z [info] [app/models/membership.js]: SUCCESS
+2020-06-10T12:42:37.946Z [info] [app/models/permission.js]: SUCCESS
+2020-06-10T12:42:38.018Z [info] [app/models/photo-album.js]: SUCCESS
+2020-06-10T12:42:38.054Z [info] [app/models/form/form.js]: SUCCESS
+2020-06-10T12:42:38.080Z [info] [app/models/forum/thread.js]: SUCCESS
+2020-06-10T12:42:38.096Z [info] [app/models/debit/collection.js]: SUCCESS
+2020-06-10T12:42:38.168Z [info] [app/models/form/closed-question-answer.js]: SUCCESS
+2020-06-10T12:42:38.190Z [info] [app/models/quickpost-message.js]: SUCCESS
+2020-06-10T12:42:38.122Z [info] [app/models/form/open-question-answer.js]: SUCCESS
+2020-06-10T12:42:38.178Z [info] [app/models/form/open-question.js]: SUCCESS
+2020-06-10T12:42:38.200Z [info] [app/models/debit/mandate.js]: SUCCESS
+2020-06-10T12:42:38.254Z [info] [app/models/debit/transaction.js]: SUCCESS
+2020-06-10T12:42:38.238Z [info] [app/models/group.js]: SUCCESS
+2020-06-10T12:42:38.283Z [info] [app/models/mail-alias.js]: SUCCESS
+2020-06-10T12:42:38.309Z [info] [app/models/static-page.js]: SUCCESS
+2020-06-10T12:42:38.346Z [info] [app/models/stored-mail.js]: SUCCESS
+2020-06-10T12:42:38.398Z [warn] [app/models/board-room-presence.js]: FAILURE
+Validation errors:
+	[statusOptions]: Transform not supported - value is of type object. For more details: eslint-plugin-ember/avoid-leaking-state-in-ember-objects
+2020-06-10T12:42:38.342Z [info] [app/models/form/closed-question.js]: SUCCESS
+2020-06-10T12:42:38.402Z [info] [app/models/form/closed-question-option.js]: SUCCESS
+2020-06-10T12:42:38.441Z [warn] [app/models/custom-inflector-rules-2.js]: SKIPPED Could not find runtime data NO_RUNTIME_DATA
+2020-06-10T12:42:38.478Z [info] [app/models/daily-verse.js]: SUCCESS
+2020-06-10T12:42:38.500Z [info] [app/models/user.js]: SUCCESS
+2020-06-10T12:42:38.584Z [warn] [app/models/form/response.js]: FAILURE
+Validation errors:
+	[_groupedAnswers]: Transform not supported - need option '--decorators=true' or the property type CallExpression can not be transformed
+2020-06-10T12:42:38.636Z [info] [app/models/activity.js]: SUCCESS
+2020-06-10T12:42:38.626Z [info] [app/models/forum/category.js]: SUCCESS
+2020-06-10T12:42:38.688Z [info] [app/models/forum/post.js]: SUCCESS
+2020-06-10T12:42:38.700Z [info] [app/models/article-comment.js]: SUCCESS
+2020-06-10T12:42:38.743Z [info] [app/models/article.js]: SUCCESS
+2020-06-10T16:06:38.155Z [info] [app/components/index/youtube-videos.js]: SUCCESS
+2020-06-10T16:06:38.187Z [info] [app/components/index/index-recent-news.js]: SUCCESS
+2020-06-10T16:06:38.272Z [info] [app/components/index/special-promo.js]: SUCCESS
+2020-06-10T16:06:38.305Z [info] [app/components/index/activities.js]: SUCCESS
+2020-06-10T16:06:38.341Z [info] [app/components/index/photos.js]: SUCCESS
+2020-06-10T16:06:38.424Z [warn] [app/components/index/sponsorkliks-alert.js]: SKIPPED Could not find runtime data NO_RUNTIME_DATA
+2020-06-10T16:06:38.625Z [info] [app/components/index/public/background-image.js]: SUCCESS
+2020-06-12T15:09:02.774Z [info] [app/components/model-form/text-input.js]: SUCCESS
+2020-06-12T15:09:02.795Z [info] [app/components/model-form/form-actions.js]: SUCCESS
+2020-06-12T15:09:02.808Z [info] [app/components/model-form/select-input.js]: SUCCESS
+2020-06-12T15:09:02.822Z [info] [app/components/model-form/md-input.js]: SUCCESS
+2020-06-12T15:09:02.836Z [info] [app/components/model-form/datetime-input.js]: SUCCESS
+2020-06-12T15:09:02.849Z [info] [app/components/model-form/textarea-input.js]: SUCCESS
+2020-06-12T15:09:02.924Z [info] [app/components/model-form/checkbox-input.js]: SUCCESS
+2020-06-12T15:09:02.964Z [info] [app/components/model-form/radio-button.js]: SUCCESS
+2020-06-12T15:09:02.969Z [warn] [app/components/model-form/file-input.js]: FAILURE 
+Validation errors: 
+	[validExtensions]: Transform not supported - need option '--decorators=true' or the property type CallExpression can not be transformed
+	[validExtensions]: Transform not supported - value has modifiers like 'property' or 'meta'
+	[fileLoaded]: Transform not supported - calling the passed action would cause an infinite loop. See https://github.com/scalvert/eslint-plugin-ember-es6-class/pull/2 for more details
+2020-06-12T15:09:02.969Z [info] [app/components/model-form/date-input.js]: SUCCESS
+2020-06-12T15:09:03.009Z [info] [app/components/model-form/radio-group.js]: SUCCESS
+2020-06-12T15:09:03.067Z [info] [app/components/model-form/checkbox-button.js]: SUCCESS
+2020-06-12T15:09:03.115Z [info] [app/components/model-form/checkbox-group.js]: SUCCESS
