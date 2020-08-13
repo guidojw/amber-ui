@@ -1,5 +1,0 @@
-{{#if session.isAuthenticated}}
-  <Index::Authenticated @articles={{this.pagedModel}}/>
-{{else}}
-  <Index::Public @articles={{this.pagedModel}}/>
-{{/if}}
