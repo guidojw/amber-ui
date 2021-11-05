@@ -1,4 +1,4 @@
-FROM madnificent/ember:3.17.0 as ember
+FROM madnificent/ember:3.26.1 as ember
 MAINTAINER C.S.V. Alpha <ict@csvalpha.nl>
 
 ARG DEPLOY_TARGET='production'
