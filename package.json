@@ -55,7 +55,7 @@
     "ember-cli-uglify": "^3.0",
     "ember-concurrency": "^2.0",
     "ember-crumbly": "^3.0",
-    "ember-data": "^3.20.0",
+    "ember-data": "^3.20.5",
     "ember-fetch": "^8.0",
     "ember-file-upload": "^3.0.6",
     "ember-group-by": "^0.0",
