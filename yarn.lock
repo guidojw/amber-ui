@@ -6321,13 +6321,16 @@ ember-cli-build-config-editor@0.5.1:
   dependencies:
     recast "^0.12.0"
 
-ember-cli-content-security-policy@^1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-content-security-policy/-/ember-cli-content-security-policy-1.1.1.tgz#7d91a695319d8f99c317f3a594fba77bbfedf6c7"
-  integrity sha512-QgGAFt1nmsb0qF2YXI5iSM7jJVb09R2hrfX7uR+kkXMb5VyNQXdo2ZlX/DuIbePQVY4q9THpRh8Yf0UHJNbvDQ==
+ember-cli-content-security-policy@^2.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-content-security-policy/-/ember-cli-content-security-policy-2.0.0.tgz#1dc0d743799e237ba84d58d5cfa227d70492be8b"
+  integrity sha512-LjV8AEvhyPzq07Pkh1DN03GMRp1IupMhPWYiOryaz8HVnAubmBprHlbBbJTSEdRxHB48Dw1Ud8jZAPiUN+4Bbg==
   dependencies:
     body-parser "^1.17.0"
-    chalk "^2.0.0"
+    chalk "^4.1.1"
+    debug "^4.3.1"
+    ember-cli-babel "^7.26.3"
+    ember-cli-version-checker "^5.0.2"
 
 ember-cli-dependency-checker@^3.2:
   version "3.2.0"
@@ -6794,7 +6797,7 @@ ember-cli-version-checker@^4.1.0:
     semver "^6.3.0"
     silent-error "^1.1.1"
 
-ember-cli-version-checker@^5.0.1, ember-cli-version-checker@^5.1.1, ember-cli-version-checker@^5.1.2:
+ember-cli-version-checker@^5.0.1, ember-cli-version-checker@^5.0.2, ember-cli-version-checker@^5.1.1, ember-cli-version-checker@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/ember-cli-version-checker/-/ember-cli-version-checker-5.1.2.tgz#649c7b6404902e3b3d69c396e054cea964911ab0"
   integrity sha512-rk7GY+FmLn/2e22HsZs0Ycrz8HQ1W3Fv+2TFOuEFW9optnDXDgkntPBIl6gact/LHsfBM5RKbM3dHsIIeLgl0Q==
