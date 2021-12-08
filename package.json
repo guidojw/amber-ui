@@ -93,7 +93,7 @@
     "morgan": "^1.9",
     "node-sass": "^5.0",
     "qunit": "^2.17.2",
-    "qunit-dom": "^1.2",
+    "qunit-dom": "^2.0",
     "remove-markdown": "^0.3",
     "stylelint": "^13.0",
     "stylelint-config-sass-guidelines": "^8.0",
