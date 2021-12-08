@@ -5932,13 +5932,13 @@ elliptic@^6.5.3:
     ember-compatibility-helpers "^1.1.2"
     ember-destroyable-polyfill "^2.0.2"
 
-ember-assign-helper@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/ember-assign-helper/-/ember-assign-helper-0.3.0.tgz#7a023dd165ef56b28f77f70fd20e88261380aca7"
-  integrity sha512-kDY0IRP6PUSJjghM2gIq24OD7d6XcZ1666zmZrywxEVjCenhaR0Oi/BXUU8JEATrIcXIExMIu34GKrHHlCLw0Q==
+ember-assign-helper@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/ember-assign-helper/-/ember-assign-helper-0.4.0.tgz#f0a313033656c0d2cbbcb29d55b9cd13f04bc7c1"
+  integrity sha512-GKHhT4HD2fhtDnuBk6eCdCA8XGew9hY7TVs8zjrykegiI7weC0CGtpJscmIG3O0gEEb0d07UTkF2pjfNGLx4Nw==
   dependencies:
-    ember-cli-babel "^7.19.0"
-    ember-cli-htmlbars "^4.3.1"
+    ember-cli-babel "^7.26.0"
+    ember-cli-htmlbars "^6.0.0"
 
 ember-ast-helpers@0.3.5:
   version "0.3.5"
@@ -6052,10 +6052,10 @@ ember-auto-import@^1.2.19, ember-auto-import@^1.5.3:
     walk-sync "^0.3.3"
     webpack "^4.43.0"
 
-ember-basic-dropdown@^3.0.21:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/ember-basic-dropdown/-/ember-basic-dropdown-3.1.0.tgz#47c292de890d1958057736c00b8eb2b8017d530b"
-  integrity sha512-UISvgJHfiJ8FeXqH8ZN+NmoImN8p6Sb+85qlEv853hLuEfEYnFUqLNhea8nNl9CpFqcD3yU4dKbhYtc6nB39aQ==
+"ember-basic-dropdown@^3.1.0 || ^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/ember-basic-dropdown/-/ember-basic-dropdown-4.0.0.tgz#ad04cff6b4db04069456ce55c19e1155f2ae9e75"
+  integrity sha512-V7G2fhIiIPAcU6JFm8qzz4OoIE+9cO/Hkh8KlcRyenP9lEa+PHiWSwGmX5gtSFi6PYjdr58/oJMEKSbWFj/Iiw==
   dependencies:
     "@ember/render-modifiers" "^2.0.0"
     "@embroider/macros" "^0.47.2"
@@ -7311,15 +7311,16 @@ ember-popper@^0.11.3:
     fastboot-transform "^0.1.0"
     popper.js "^1.14.1"
 
-ember-power-select@^4.0:
-  version "4.1.7"
-  resolved "https://registry.yarnpkg.com/ember-power-select/-/ember-power-select-4.1.7.tgz#eb547dd37448357d8f3fa789db18ddbba43fb8ca"
-  integrity sha512-Q4cjUudWb7JA6q7qe0jhcpLsipuFUHMwkYC05HxST5qm3MRMEzs6KfZ3Xd/TcrjBLSoWniw3Q61Quwcb41w5Jw==
+ember-power-select@^5.0:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/ember-power-select/-/ember-power-select-5.0.2.tgz#6d9b277f5d263d12cabb0aa2d44faf572f3f3285"
+  integrity sha512-/o5SIlQumeAaqGT3Y3mw97EqlQ0RTQM4GC+soIjeB5d0AcTvHppoF06gsCdeXEN5FA/S4iGseAg86Op61zfpKQ==
   dependencies:
+    "@embroider/util" "^0.47.2"
     "@glimmer/component" "^1.0.4"
     "@glimmer/tracking" "^1.0.4"
-    ember-assign-helper "^0.3.0"
-    ember-basic-dropdown "^3.0.21"
+    ember-assign-helper "^0.4.0"
+    ember-basic-dropdown "^3.1.0 || ^4.0.0"
     ember-cli-babel "^7.26.0"
     ember-cli-htmlbars "^6.0.0"
     ember-cli-typescript "^4.2.0"
