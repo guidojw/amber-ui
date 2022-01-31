@@ -57,7 +57,7 @@
       "groupSlug": "all-minor-patch"
     },
     {
-      "matchManagers": ["docker", "npm"],
+      "matchManagers": ["dockerfile", "npm"],
       "matchPackageNames": ["danlynn/ember-cli", "ember-cli"],
       "groupName": "ember-cli",
       "separateMinorPatch": true,
@@ -65,7 +65,7 @@
       "prBodyNotes": "### Upgrade Instructions"
     },
     {
-      "matchManagers": ["docker", "npm"],
+      "matchManagers": ["dockerfile", "npm"],
       "matchPackageNames": ["danlynn/ember-cli", "ember-cli"],
       "matchUpdateTypes": ["patch"],
       "draftPR": false
