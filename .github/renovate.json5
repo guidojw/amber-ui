@@ -54,13 +54,10 @@
       "groupSlug": "all-minor-patch"
     },
     {
-      "matchPackageNames": ["danlynn/ember-cli", "ember-cli"],
-      "groupName": "ember.js",
-      "groupSlug": "ember",
+      "matchPackageNames": ["ember-cli"],
       "rangeStrategy": "replace",
       "draftPR": true,
-      "separateMinorPatch": true,
-      "prBodyColumns": ["Package", "Change"]
+      "separateMinorPatch": true
     },
     {
       "description": "faker v5.5.3 -> v6.6.6 update removed all its source.",
