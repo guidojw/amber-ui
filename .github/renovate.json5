@@ -57,15 +57,14 @@
       "groupSlug": "all-minor-patch"
     },
     {
-      "matchManagers": ["dockerfile", "npm"],
       "matchPackageNames": ["danlynn/ember-cli", "ember-cli"],
       "groupName": "ember-cli",
       "separateMinorPatch": true,
       "draftPR": true,
-      "prBodyNotes": "### Upgrade Instructions"
+      "prBodyNotes": "### Upgrade Instructions",
+      "commitMessageTopic": "dependency ember-cli to v{{newVersion}}"
     },
     {
-      "matchManagers": ["dockerfile", "npm"],
       "matchPackageNames": ["danlynn/ember-cli", "ember-cli"],
       "matchUpdateTypes": ["patch"],
       "draftPR": false
