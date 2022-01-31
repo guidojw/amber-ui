@@ -26,6 +26,7 @@ jobs:
         uses: kellyselden/ember-cli-update-action@97db10a1de3797801f1b5418cd91fdad73519b52 # renovate: tag=v3.0.23
         with:
           install_command: yarn install --no-immutable
+          autofix_command: git rm --cached -r .github
 
       - name: Build test image
         uses: guidojw/actions/build-docker-image@2b1dea8cbd9e44491c269e771b75636026caf8ca # renovate: tag=v1.1.0
