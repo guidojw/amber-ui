@@ -1,7 +1,7 @@
-/* jshint node:true */
 'use strict';
 
 module.exports = {
+  extends: 'octane',
   rules: {
     'no-bare-strings': false,
     'block-indentation': 2,
@@ -25,7 +25,6 @@ module.exports = {
     'no-invalid-interactive': false,
     'no-quoteless-attributes': false,
     'no-negated-condition': false,
-    'no-unused-block-params': false,
-  },
-  extends: 'octane'
+    'no-unused-block-params': false
+  }
 };

@@ -43,9 +43,6 @@ module.exports = {
     'no-multiple-empty-lines': [2, { 'max': 1, 'maxBOF': 0, 'maxEOF': 0 }],
     'padded-blocks': [2, 'never', { 'allowSingleLineBlocks': true }]
   },
-  globals: {
-    'moment': true
-  },
   overrides: [
     // node files
     {
@@ -57,11 +54,12 @@ module.exports = {
         'blueprints/*/index.js',
         'config/**/*.js',
         'lib/*/index.js',
-        'server/**/*.js'
+        'server/**/*.js',
+        '.stylelintrc.js',
+        '.stylelintrc.order.js'
       ],
       parserOptions: {
-        sourceType: 'script',
-        ecmaVersion: 2018
+        sourceType: 'script'
       },
       env: {
         browser: false,
@@ -75,5 +73,8 @@ module.exports = {
         'node/no-unpublished-require': 'off'
       }
     }
-  ]
+  ],
+  globals: {
+    'moment': true
+  }
 };
