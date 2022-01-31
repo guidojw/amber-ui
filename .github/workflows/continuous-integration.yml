@@ -18,16 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
         with:
-          ref: ${{ inputs.sha || github.head_ref }}
-          fetch-depth: 2
-
-      - name: Run ember-cli-update
-        if: github.event_name == 'pull_request'
-        uses: kellyselden/ember-cli-update-action@97db10a1de3797801f1b5418cd91fdad73519b52 # renovate: tag=v3.0.23
-        with:
-          install_command: yarn install --no-immutable
-          # Delete added workflow files as we have our own and the job will error otherwise.
-          autofix_command: rm .github/workflows/ci.yml
+          ref: ${{ inputs.sha }}
 
       - name: Build test image
         uses: guidojw/actions/build-docker-image@2b1dea8cbd9e44491c269e771b75636026caf8ca # renovate: tag=v1.1.0
@@ -44,7 +35,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
         with:
-          ref: ${{ inputs.sha || github.head_ref }}
+          ref: ${{ inputs.sha }}
 
       - name: Add problem matchers
         run: |
