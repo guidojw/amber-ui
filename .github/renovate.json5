@@ -36,10 +36,13 @@
     "eslint",
     "eslint-plugin-ember",
     "eslint-plugin-node",
-    "glob", // ember-cli's server blueprint is responsible for this.
-    "http-proxy", // ember-cli's http-proxy blueprint is responsible for this.
+    // ember-cli's server blueprint is responsible for this.
+    "glob",
+    // ember-cli's http-proxy blueprint is responsible for this.
+    "http-proxy",
     "loader.js",
-    "morgan", // ember-cli's server blueprint is responsible for this.
+    // ember-cli's server blueprint is responsible for this.
+    "morgan",
     "npm-run-all",
     "qunit-dom"
   ],
@@ -55,8 +58,7 @@
     },
     {
       "matchPackageNames": ["danlynn/ember-cli", "ember-cli"],
-      "rangeStrategy": "replace",
-      "draftPR": true,
+      "groupName": "ember-cli",
       "separateMinorPatch": true,
       "prBodyNotes": "### Upgrade instructions"
     },
