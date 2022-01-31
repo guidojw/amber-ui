@@ -19,6 +19,7 @@ jobs:
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
         with:
           ref: ${{ inputs.sha }}
+          fetch-depth: 2
 
       - name: Run ember-cli-update
         if: github.event_name == 'pull_request'
