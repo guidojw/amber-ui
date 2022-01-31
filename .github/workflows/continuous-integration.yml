@@ -21,6 +21,7 @@ jobs:
           ref: ${{ inputs.sha }}
 
       - name: Run ember-cli-update
+        if: github.event_name == 'pull_request'
         uses: kellyselden/ember-cli-update-action@97db10a1de3797801f1b5418cd91fdad73519b52 # renovate: tag=v3.0.23
 
       - name: Build test image
