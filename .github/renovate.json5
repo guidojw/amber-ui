@@ -57,10 +57,10 @@
       "groupSlug": "all-minor-patch"
     },
     {
-      "matchPackageNames": ["danlynn/ember-cli", "ember-cli"],
+      "matchPackageNames": ["ember-cli", "danlynn/ember-cli"],
       "groupName": "ember-cli",
       "separateMinorPatch": true,
-      "prBodyNotes": "### Upgrade instructions"
+      "prBodyNotes": "### Upgrade Instructions"
     },
     {
       "description": "faker v5.5.3 -> v6.6.6 update removed all its source.",
