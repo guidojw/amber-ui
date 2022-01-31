@@ -18,7 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
         with:
-          ref: ${{ inputs.sha }}
+          ref: ${{ inputs.sha || github.head_ref }}
           fetch-depth: 2
 
       - name: Run ember-cli-update
@@ -42,7 +42,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
         with:
-          ref: ${{ inputs.sha }}
+          ref: ${{ inputs.sha || github.head_ref }}
 
       - name: Add problem matchers
         run: |
