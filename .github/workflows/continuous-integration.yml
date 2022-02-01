@@ -38,8 +38,8 @@ jobs:
         with:
           install_command: |
             yarn --no-immutable
+          # Delete added workflow files as we have our own and the job will error otherwise.
           autofix_command: |
-            # Delete added workflow files as we have our own and the job will error otherwise.
             rm .github/workflows/ci.yml
           ignore_to: true
 
