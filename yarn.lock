@@ -92,7 +92,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.13.15, @babel/core@npm:^7.13.8":
+"@babel/core@npm:^7.13.15":
   version: 7.16.0
   resolution: "@babel/core@npm:7.16.0"
   dependencies:
@@ -115,7 +115,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.16.7":
+"@babel/core@npm:^7.16.0, @babel/core@npm:^7.16.7":
   version: 7.16.12
   resolution: "@babel/core@npm:7.16.12"
   dependencies:
@@ -2734,6 +2734,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.14.0":
+  version: 7.16.7
+  resolution: "@babel/runtime@npm:7.16.7"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 47912f0aaacd1cab2e2552aaf3e6eaffbcaf2d5ac9b07a89a12ac0d42029cb92c070b0d16f825e4277c4a34677c54d8ffe85e1f7c6feb57de58f700eec67ce2f
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.12.13":
   version: 7.12.13
   resolution: "@babel/template@npm:7.12.13"
@@ -5207,7 +5216,7 @@ __metadata:
     ember-auto-import: ^1.6.0
     ember-bootstrap: ^4.9.0
     ember-can: ^4.1.0
-    ember-cli: ^3.20.2
+    ember-cli: ^4.1.1
     ember-cli-babel: ^7.21.0
     ember-cli-content-security-policy: ^2.0.1
     ember-cli-dependency-checker: ^3.2.0
@@ -5463,6 +5472,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"anymatch@npm:^3.1.1, anymatch@npm:~3.1.2":
+  version: 3.1.2
+  resolution: "anymatch@npm:3.1.2"
+  dependencies:
+    normalize-path: ^3.0.0
+    picomatch: ^2.0.4
+  checksum: 985163db2292fac9e5a1e072bf99f1b5baccf196e4de25a0b0b81865ebddeb3b3eb4480734ef0a2ac8c002845396b91aa89121f5b84f93981a4658164a9ec6e9
+  languageName: node
+  linkType: hard
+
 "anymatch@npm:~3.1.1":
   version: 3.1.1
   resolution: "anymatch@npm:3.1.1"
@@ -5470,16 +5489,6 @@ __metadata:
     normalize-path: ^3.0.0
     picomatch: ^2.0.4
   checksum: c951385862bf114807d594bdffccb769bd7219ddc14f24fc135cde075ad2477a97991567b8bb5032d4f279f96897f0c2af6468a350a6c674ac0a5ee3b62a26d6
-  languageName: node
-  linkType: hard
-
-"anymatch@npm:~3.1.2":
-  version: 3.1.2
-  resolution: "anymatch@npm:3.1.2"
-  dependencies:
-    normalize-path: ^3.0.0
-    picomatch: ^2.0.4
-  checksum: 985163db2292fac9e5a1e072bf99f1b5baccf196e4de25a0b0b81865ebddeb3b3eb4480734ef0a2ac8c002845396b91aa89121f5b84f93981a4658164a9ec6e9
   languageName: node
   linkType: hard
 
@@ -7799,6 +7808,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"broccoli-source@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "broccoli-source@npm:3.0.1"
+  dependencies:
+    broccoli-node-api: ^1.6.0
+  checksum: e47d16d269b616f12d525629d85e71e2d91b2daaf2e59a367c81f8db8cc324d7c9259de43dfa5130358ba6333fd0b620016895947dbc969c92d2ea94c2b755ea
+  languageName: node
+  linkType: hard
+
 "broccoli-sri-hash@npm:^2.1.0":
   version: 2.1.2
   resolution: "broccoli-sri-hash@npm:2.1.2"
@@ -7898,7 +7916,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"broccoli@npm:^3.5.1":
+"broccoli@npm:^3.5.2":
   version: 3.5.2
   resolution: "broccoli@npm:3.5.2"
   dependencies:
@@ -8675,6 +8693,13 @@ __metadata:
   version: 2.0.0
   resolution: "ci-info@npm:2.0.0"
   checksum: 3b374666a85ea3ca43fa49aa3a048d21c9b475c96eb13c133505d2324e7ae5efd6a454f41efe46a152269e9b6a00c9edbe63ec7fa1921957165aae16625acd67
+  languageName: node
+  linkType: hard
+
+"ci-info@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "ci-info@npm:3.3.0"
+  checksum: c3d86fe374938ecda5093b1ba39acb535d8309185ba3f23587747c6a057e63f45419b406d880304dbc0e1d72392c9a33e42fe9a1e299209bc0ded5efaa232b66
   languageName: node
   linkType: hard
 
@@ -11173,17 +11198,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cli@npm:^3.20.2":
-  version: 3.28.5
-  resolution: "ember-cli@npm:3.28.5"
+"ember-cli@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "ember-cli@npm:4.1.1"
   dependencies:
-    "@babel/core": ^7.13.8
+    "@babel/core": ^7.16.0
     "@babel/plugin-transform-modules-amd": ^7.12.1
     amd-name-resolver: ^1.3.1
     babel-plugin-module-resolver: ^4.1.0
     bower-config: ^1.4.3
     bower-endpoint-parser: 0.2.2
-    broccoli: ^3.5.1
+    broccoli: ^3.5.2
     broccoli-amd-funnel: ^2.0.1
     broccoli-babel-transpiler: ^7.8.0
     broccoli-builder: ^0.18.14
@@ -11191,17 +11216,17 @@ __metadata:
     broccoli-config-loader: ^1.0.1
     broccoli-config-replace: ^1.1.2
     broccoli-debug: ^0.6.5
-    broccoli-funnel: ^3.0.5
+    broccoli-funnel: ^3.0.8
     broccoli-funnel-reducer: ^1.0.0
     broccoli-merge-trees: ^3.0.2
     broccoli-middleware: ^2.1.1
     broccoli-slow-trees: ^3.1.0
-    broccoli-source: ^3.0.0
+    broccoli-source: ^3.0.1
     broccoli-stew: ^3.0.0
     calculate-cache-key-for-tree: ^2.0.0
     capture-exit: ^2.0.0
     chalk: ^4.1.0
-    ci-info: ^2.0.0
+    ci-info: ^3.3.0
     clean-base-url: ^1.0.0
     compression: ^1.7.4
     configstore: ^5.0.1
@@ -11216,10 +11241,10 @@ __metadata:
     ember-cli-string-utils: ^1.1.0
     ember-source-channel-url: ^3.0.0
     ensure-posix-path: ^1.1.1
-    execa: ^5.0.0
+    execa: ^5.1.1
     exit: ^0.1.2
     express: ^4.17.1
-    filesize: ^6.1.0
+    filesize: ^8.0.6
     find-up: ^5.0.0
     find-yarn-workspace-root: ^2.0.0
     fixturify-project: ^2.1.1
@@ -11227,16 +11252,16 @@ __metadata:
     fs-tree-diff: ^2.0.1
     get-caller-file: ^2.0.5
     git-repo-info: ^2.1.1
-    glob: ^7.1.6
+    glob: ^7.2.0
     heimdalljs: ^0.2.6
-    heimdalljs-fs-monitor: ^1.1.0
+    heimdalljs-fs-monitor: ^1.1.1
     heimdalljs-graph: ^1.0.0
     heimdalljs-logger: ^0.1.10
     http-proxy: ^1.18.1
-    inflection: ^1.12.0
+    inflection: ^1.13.1
     is-git-url: ^1.0.0
-    is-language-code: ^2.0.0
-    isbinaryfile: ^4.0.6
+    is-language-code: ^3.1.0
+    isbinaryfile: ^4.0.8
     js-yaml: ^3.14.0
     json-stable-stringify: ^1.0.1
     leek: 0.0.24
@@ -11246,7 +11271,7 @@ __metadata:
     minimatch: ^3.0.4
     morgan: ^1.10.0
     nopt: ^3.0.6
-    npm-package-arg: ^8.1.1
+    npm-package-arg: ^8.1.5
     p-defer: ^3.0.0
     portfinder: ^1.0.28
     promise-map-series: ^0.3.0
@@ -11254,7 +11279,7 @@ __metadata:
     quick-temp: ^0.1.8
     resolve: ^1.20.0
     resolve-package-path: ^3.1.0
-    sane: ^4.1.0
+    sane: ^5.0.1
     semver: ^7.3.4
     silent-error: ^1.1.1
     sort-package-json: ^1.49.0
@@ -11265,12 +11290,12 @@ __metadata:
     tree-sync: ^2.1.0
     uuid: ^8.3.2
     walk-sync: ^2.2.0
-    watch-detector: ^1.0.0
+    watch-detector: ^1.0.1
     workerpool: ^6.1.4
     yam: ^1.0.0
   bin:
     ember: bin/ember
-  checksum: 01badab6239582566bfa66473fd9362557bebba739e893c7e82c47a4d98ea042e3f14a3973dca73bb1463d9b3fdebae98b0398aea3122d666f581a13ab1210c8
+  checksum: b8bab28f83c302f84767896e52a2f01b8431cdf9124ab8707b68ebecfedffedcf2eadf790d153c53a3a2cbe9e3e1a203b63bf71aa5ef1ec378e90f52eb0c254a
   languageName: node
   linkType: hard
 
@@ -12763,6 +12788,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"exec-sh@npm:^0.3.4":
+  version: 0.3.6
+  resolution: "exec-sh@npm:0.3.6"
+  checksum: 0be4f06929c8e4834ea4812f29fe59e2dfcc1bc3fc4b4bb71acb38a500c3b394628a05ef7ba432520bc6c5ec4fadab00cc9c513c4ff6a32104965af302e998e0
+  languageName: node
+  linkType: hard
+
 "execa@npm:^0.7.0":
   version: 0.7.0
   resolution: "execa@npm:0.7.0"
@@ -12845,7 +12877,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^5.0.0":
+"execa@npm:^5.0.0, execa@npm:^5.1.1":
   version: 5.1.1
   resolution: "execa@npm:5.1.1"
   dependencies:
@@ -13180,7 +13212,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fb-watchman@npm:^2.0.0":
+"fb-watchman@npm:^2.0.0, fb-watchman@npm:^2.0.1":
   version: 2.0.1
   resolution: "fb-watchman@npm:2.0.1"
   dependencies:
@@ -13244,10 +13276,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"filesize@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "filesize@npm:6.1.0"
-  checksum: c46d644cb562fba7b7e837d5cd339394492abaa06722018b91a97d2a63b6c753ef30653de5c03bf178c631185bf55c3561c28fa9ccc4e9755f42d853c6ed4d09
+"filesize@npm:^8.0.6":
+  version: 8.0.7
+  resolution: "filesize@npm:8.0.7"
+  checksum: 8603d27c5287b984cb100733640645e078f5f5ad65c6d913173e01fb99e09b0747828498fd86647685ccecb69be31f3587b9739ab1e50732116b2374aff4cbf9
   languageName: node
   linkType: hard
 
@@ -14140,7 +14172,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.3, glob@npm:^7.1.1":
+"glob@npm:^7.0.3, glob@npm:^7.1.1, glob@npm:^7.2.0":
   version: 7.2.0
   resolution: "glob@npm:7.2.0"
   dependencies:
@@ -14651,7 +14683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"heimdalljs-fs-monitor@npm:^1.1.0":
+"heimdalljs-fs-monitor@npm:^1.1.1":
   version: 1.1.1
   resolution: "heimdalljs-fs-monitor@npm:1.1.1"
   dependencies:
@@ -15109,6 +15141,13 @@ __metadata:
   version: 1.12.0
   resolution: "inflection@npm:1.12.0"
   checksum: c640917b7c1ef2151df8eed5e7bc1ea6f6dd7b924e86f1add0bf801db55be8b581eb2d3d767a29e439153e4c06b00679a45853ac58c498ea519c4b4bdcd2a775
+  languageName: node
+  linkType: hard
+
+"inflection@npm:^1.13.1":
+  version: 1.13.2
+  resolution: "inflection@npm:1.13.2"
+  checksum: e7ad0559384ed7c526813404bde843f8f17941d47625ad60fc3b09e46efde873dd9840818007c6bd4dbe388e6248fa033d5a8c405c5fc62738c51b118a0e940f
   languageName: node
   linkType: hard
 
@@ -15612,10 +15651,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-language-code@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "is-language-code@npm:2.0.0"
-  checksum: 76c166e04c62f975e71d4b7e8f12a58ed90cd3f2226d11e75df49bb7391e3c171accb6fbde9ef29216017b20d6ef76dd39243d947dd5c84d68cf89481483726d
+"is-language-code@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "is-language-code@npm:3.1.0"
+  dependencies:
+    "@babel/runtime": ^7.14.0
+  checksum: 97d2cd7ce00c32721bd1c6b4dccbe775c145612f70f57f384400ee18c49697ab810893a64daf73a9baf07f5f373f241c90fad0e7c8e99c104add114ae5604ee5
   languageName: node
   linkType: hard
 
@@ -15920,10 +15961,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isbinaryfile@npm:^4.0.6":
-  version: 4.0.6
-  resolution: "isbinaryfile@npm:4.0.6"
-  checksum: 25a6a3025fab513897302db8be6392ee0a8d2533f3aea78a93365f20e1e2649ef001220326731b275c437ed00dc35709dbf1834ab991995944b9fa80478b385f
+"isbinaryfile@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "isbinaryfile@npm:4.0.8"
+  checksum: 606e3bb648d1a0dee23459d1d937bb2560e66a5281ec7c9ff50e585402d73321ac268d0f34cb7393125b3ebc4c7962d39e50a01cdb8904b52fce08b7ccd2bf9f
   languageName: node
   linkType: hard
 
@@ -18459,7 +18500,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-package-arg@npm:^8.0.0, npm-package-arg@npm:^8.0.1, npm-package-arg@npm:^8.1.1, npm-package-arg@npm:^8.1.2":
+"npm-package-arg@npm:^8.0.0, npm-package-arg@npm:^8.0.1, npm-package-arg@npm:^8.1.2, npm-package-arg@npm:^8.1.5":
   version: 8.1.5
   resolution: "npm-package-arg@npm:8.1.5"
   dependencies:
@@ -21327,7 +21368,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sane@npm:^4.0.0, sane@npm:^4.1.0":
+"sane@npm:^4.0.0":
   version: 4.1.0
   resolution: "sane@npm:4.1.0"
   dependencies:
@@ -21343,6 +21384,25 @@ __metadata:
   bin:
     sane: ./src/cli.js
   checksum: 97716502d456c0d38670a902a4ea943d196dcdf998d1e40532d8f3e24e25d7eddfd4c3579025a1eee8eac09a48dfd05fba61a2156c56704e7feaa450eb249f7c
+  languageName: node
+  linkType: hard
+
+"sane@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "sane@npm:5.0.1"
+  dependencies:
+    "@cnakazawa/watch": ^1.0.3
+    anymatch: ^3.1.1
+    capture-exit: ^2.0.0
+    exec-sh: ^0.3.4
+    execa: ^4.0.0
+    fb-watchman: ^2.0.1
+    micromatch: ^4.0.2
+    minimist: ^1.1.1
+    walker: ~1.0.5
+  bin:
+    sane: src/cli.js
+  checksum: 137c419e28dea9f8fc31c1817012d335d511dd8d5a1527f87742b7a4e904e009f62d52fab933d565c10c2fcf6113aa5c30a99d2eb651b63e835ea73de6267615
   languageName: node
   linkType: hard
 
@@ -24069,6 +24129,18 @@ __metadata:
     silent-error: ^1.1.1
     tmp: ^0.1.0
   checksum: da3ab7804890663a07b36c53c27a15bad086021f195941141c0b7153f5b3e269e925a2fb3b65377bd0f5606891e67213a10d31fedd3feed21aef604a30053b26
+  languageName: node
+  linkType: hard
+
+"watch-detector@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "watch-detector@npm:1.0.1"
+  dependencies:
+    heimdalljs-logger: ^0.1.10
+    semver: ^6.3.0
+    silent-error: ^1.1.1
+    tmp: ^0.1.0
+  checksum: 9b519697c92d0ea539c31ac380d273a673e35e14cb68ee1e649626009b032b36f01c26d2f7b9b5051a13024b0095dd7250179cea5760ad2c94eb9aba56020cd2
   languageName: node
   linkType: hard
 
