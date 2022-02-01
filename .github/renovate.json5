@@ -61,8 +61,7 @@
       "groupName": "ember-cli",
       "separateMinorPatch": true,
       "draftPR": true,
-      "prBodyNotes": "### Upgrade Instructions",
-      "commitMessageTopic": "dependency ember-cli to v{{newVersion}}"
+      "prBodyNotes": "{{#unless isPatch}}### Upgrade Instructions{{/unless}}"
     },
     {
       "matchPackageNames": ["danlynn/ember-cli", "ember-cli"],
