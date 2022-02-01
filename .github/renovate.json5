@@ -61,17 +61,17 @@
       "groupName": "ember-cli",
       "separateMinorPatch": true,
       "draftPR": true,
+      "prBodyDefinitions": {
+        // Update the Change column definition to match
+        // ember-cli-update-action's regex.
+        "Change": "[`{{currentValue}}` -> `{{newValue}}`]({{url}})"
+      },
       "prBodyNotes": "{{#unless isPatch}}### Upgrade Instructions{{/unless}}"
     },
     {
       "matchPackageNames": ["danlynn/ember-cli", "ember-cli"],
       "matchUpdateTypes": ["patch"],
-      "draftPR": false,
-      "prBodyDefinitions": {
-        // Update the Change column definition to match
-        // ember-cli-update-action's regex.
-        "Change": "[`{{currentValue}}` -> `{{newValue}}`]({{url}})"
-      }
+      "draftPR": false
     },
     {
       "description": "faker v5.5.3 -> v6.6.6 update removed all its source.",

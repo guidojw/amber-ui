@@ -17,7 +17,7 @@ jobs:
   ember_cli_update:
     name: ember-cli-update
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && github.actor == 'Renovate Bot'
+    if: github.event_name == 'pull_request' && github.actor == 'Renovate Bot' && always()
     steps:
       - name: Generate app token
         id: generate_token
