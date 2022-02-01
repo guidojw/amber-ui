@@ -16,6 +16,15 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ember-data",
+      "version": "3.20.0",
+      "blueprints": [
+        {
+          "name": "ember-data"
+        }
+      ]
     }
   ]
 }
