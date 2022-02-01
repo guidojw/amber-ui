@@ -28,6 +28,7 @@ export default class Router extends EmberRouter {
   }
 }
 
+<<<<<<< HEAD
 Router.map(function() {
   this.route('oauth', function() {
     this.route('authorize');
@@ -208,3 +209,6 @@ Router.map(function() {
 
   return true;
 });
+=======
+Router.map(function () {});
+>>>>>>> b1f5f42 (v3.20.2...v4.1.1)

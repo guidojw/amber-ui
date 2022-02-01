@@ -67,9 +67,14 @@ Note: this should be configured automatically using `.editorconfig`.
 * `yarn lint:hbs` (lint hbs files)
 * `yarn lint` (lint script and style files)
 
+<<<<<<< HEAD
 For auto fix run
 * `yarn jsfix`
 * `yarn stylefix`
+=======
+* `yarn lint`
+* `yarn lint:fix`
+>>>>>>> b1f5f42 (v3.20.2...v4.1.1)
 
 ### Building
 

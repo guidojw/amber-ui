@@ -13,19 +13,13 @@
 # misc
 /coverage/
 !.*
-.*/
 .eslintcache
+.lint-todo/
 
 # ember-try
 /.node_modules.ember-try/
 /bower.json.ember-try
 /npm-shrinkwrap.json.ember-try
 /package.json.ember-try
-<<<<<<< HEAD
-
-# misc
-/bin/
-=======
 /package-lock.json.ember-try
 /yarn.lock.ember-try
->>>>>>> b1f5f42 (v3.20.2...v4.1.1)

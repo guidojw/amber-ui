@@ -7,9 +7,10 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      legacyDecorators: true
-    }
+      legacyDecorators: true,
+    },
   },
+<<<<<<< HEAD
   plugins: [
     'ember',
     'ember-suave'
@@ -18,9 +19,16 @@ module.exports = {
     'eslint:recommended',
     'plugin:ember/recommended',
     'plugin:ember-suave/recommended'
+=======
+  plugins: ['ember'],
+  extends: [
+    'eslint:recommended',
+    'plugin:ember/recommended',
+    'plugin:prettier/recommended',
+>>>>>>> b1f5f42 (v3.20.2...v4.1.1)
   ],
   env: {
-    browser: true
+    browser: true,
   },
   rules: {
     'arrow-parens': 0,
@@ -47,6 +55,7 @@ module.exports = {
     // node files
     {
       files: [
+<<<<<<< HEAD
         '.eslintrc.js',
         '.template-lintrc.js',
         'ember-cli-build.js',
@@ -57,19 +66,31 @@ module.exports = {
         'server/**/*.js',
         '.stylelintrc.js',
         '.stylelintrc.order.js'
+=======
+        './.eslintrc.js',
+        './.prettierrc.js',
+        './.template-lintrc.js',
+        './ember-cli-build.js',
+        './testem.js',
+        './blueprints/*/index.js',
+        './config/**/*.js',
+        './lib/*/index.js',
+        './server/**/*.js',
+>>>>>>> b1f5f42 (v3.20.2...v4.1.1)
       ],
       parserOptions: {
-        sourceType: 'script'
+        sourceType: 'script',
       },
       env: {
         browser: false,
-        node: true
+        node: true,
       },
       plugins: ['node'],
       extends: ['plugin:node/recommended'],
       rules: {
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
+<<<<<<< HEAD
         'node/no-unpublished-require': 'off'
       }
     }
@@ -77,4 +98,15 @@ module.exports = {
   globals: {
     'moment': true
   }
+=======
+        'node/no-unpublished-require': 'off',
+      },
+    },
+    {
+      // test files
+      files: ['tests/**/*-test.{js,ts}'],
+      extends: ['plugin:qunit/recommended'],
+    },
+  ],
+>>>>>>> b1f5f42 (v3.20.2...v4.1.1)
 };

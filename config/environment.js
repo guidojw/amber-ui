@@ -1,6 +1,7 @@
 /* eslint-env node */
 'use strict';
 
+<<<<<<< HEAD
 module.exports = function(environment) {
   const deployTarget = process.env.DEPLOY_TARGET;
 
@@ -47,6 +48,14 @@ module.exports = function(environment) {
 
     locationType: 'auto',
     historySupportMiddleware: true,
+=======
+module.exports = function (environment) {
+  let ENV = {
+    modulePrefix: 'alpha-amber',
+    environment,
+    rootURL: '/',
+    locationType: 'history',
+>>>>>>> b1f5f42 (v3.20.2...v4.1.1)
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -54,15 +63,21 @@ module.exports = function(environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+        Date: false,
+      },
     },
 
     APP: {
+<<<<<<< HEAD
       flashNoticeDefaultDuration: 2000
     },
 
     maxFilesize: 8.5 // MB
+=======
+      // Here you can pass flags/options to your application instance
+      // when it is created
+    },
+>>>>>>> b1f5f42 (v3.20.2...v4.1.1)
   };
 
   if (environment === 'development') {
