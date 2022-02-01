@@ -50,6 +50,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     needs: ember_cli_update
+    if: contains('success skipped', needs.ember_cli_update.result) && always()
     steps:
       - name: Checkout code
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
