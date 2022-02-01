@@ -11,9 +11,10 @@ on:
         type: string
 
 jobs:
-  build:
-    name: Build
+  ember_cli_update:
+    name: ember-cli-update
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.actor == 'renovate'
     steps:
       - name: Checkout code
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
@@ -22,7 +23,6 @@ jobs:
           fetch-depth: 2
 
       - name: Run ember-cli-update
-        if: github.event_name == 'pull_request'
         uses: kellyselden/ember-cli-update-action@97db10a1de3797801f1b5418cd91fdad73519b52 # renovate: tag=v3.0.23
         with:
           install_command: |
@@ -31,11 +31,19 @@ jobs:
             # Delete added workflow files as we have our own and the job will error otherwise.
             rm .github/workflows/ci.yml
           ignore_to: true
-          commit_prefix: 'chore: '
 
       - name: Report merge conflicts
-        if: github.event_name == 'pull_request'
         uses: olivernybroe/action-conflict-finder@5bf5411481db554a4ca95bd678a19739b069f4b5 # renovate: tag=v3.0
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: ember_cli_update
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2.4.0
+        with:
+          ref: ${{ inputs.sha || github.head_ref }}
 
       - name: Build test image
         uses: guidojw/actions/build-docker-image@2b1dea8cbd9e44491c269e771b75636026caf8ca # renovate: tag=v1.1.0
