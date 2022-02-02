@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = {
+<<<<<<< HEAD
   extends: 'octane',
   rules: {
     'no-bare-strings': false,
@@ -27,4 +28,7 @@ module.exports = {
     'no-negated-condition': false,
     'no-unused-block-params': false
   }
+=======
+  extends: 'recommended',
+>>>>>>> 09c1698 (v3.20.2...v3.28.5)
 };

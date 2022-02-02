@@ -1,10 +1,15 @@
 /* eslint-env node */
 'use strict';
 
+<<<<<<< HEAD
 module.exports = function(environment) {
   const deployTarget = process.env.DEPLOY_TARGET;
 
   const ENV = {
+=======
+module.exports = function (environment) {
+  let ENV = {
+>>>>>>> 09c1698 (v3.20.2...v3.28.5)
     modulePrefix: 'alpha-amber',
     environment,
     rootURL: '/',
@@ -54,15 +59,21 @@ module.exports = function(environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+        Date: false,
+      },
     },
 
     APP: {
+<<<<<<< HEAD
       flashNoticeDefaultDuration: 2000
     },
 
     maxFilesize: 8.5 // MB
+=======
+      // Here you can pass flags/options to your application instance
+      // when it is created
+    },
+>>>>>>> 09c1698 (v3.20.2...v3.28.5)
   };
 
   if (environment === 'development') {
