@@ -52,7 +52,7 @@
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["minor", "patch"],
-      "excludePackageNames": ["yarn"],
+      "excludePackageNames": ["ember-cli", "yarn"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch"
     },
