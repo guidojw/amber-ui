@@ -1680,6 +1680,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@embroider/addon-shim@npm:^0.50.2":
+  version: 0.50.2
+  resolution: "@embroider/addon-shim@npm:0.50.2"
+  dependencies:
+    "@embroider/shared-internals": ^0.50.2
+    semver: ^7.3.5
+  checksum: 14076ec7c1dd5b29c1450711c37986c70d72148cff42c8114a532473ee059257a4eec7bdb933bb774c16d98420e920112e8f4ed57b42af998103c0b802fe47de
+  languageName: node
+  linkType: hard
+
 "@embroider/macros@npm:^1.0.0":
   version: 1.5.0
   resolution: "@embroider/macros@npm:1.5.0"
@@ -1708,6 +1718,21 @@ __metadata:
     semver: ^7.3.5
     typescript-memoize: ^1.0.1
   checksum: 78f92e64f03f33a0d31489fe406ff58da8d5997b78156e3b8b73f6cd5ef14d8a810a7f65e3da96206a02a3c2277316ebdd5c6dae05abfe816eb9940d76e03004
+  languageName: node
+  linkType: hard
+
+"@embroider/shared-internals@npm:^0.50.2":
+  version: 0.50.2
+  resolution: "@embroider/shared-internals@npm:0.50.2"
+  dependencies:
+    babel-import-util: ^1.1.0
+    ember-rfc176-data: ^0.3.17
+    fs-extra: ^9.1.0
+    lodash: ^4.17.21
+    resolve-package-path: ^4.0.1
+    semver: ^7.3.5
+    typescript-memoize: ^1.0.1
+  checksum: 340426b9bb8cd43caa0db2c9455c6443c71e6ea37509e5555a1ac50db619f0cf42aa094807769571a0f81d3625f592a8626a7438440b52684eccb4c026d94ccf
   languageName: node
   linkType: hard
 
@@ -3483,7 +3508,7 @@ __metadata:
     ember-load-initializers: ^2.1.2
     ember-maybe-import-regenerator: ^0.1.6
     ember-moment: ^9.0.1
-    ember-pikaday: ^3.0.0
+    ember-pikaday: ^4.0.0
     ember-power-select: ^5.0.2
     ember-promise-helpers: ^2.0.0
     ember-qunit: ^5.1.5
@@ -8435,7 +8460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cli-htmlbars@npm:^4.2.0, ember-cli-htmlbars@npm:^4.2.2, ember-cli-htmlbars@npm:^4.3.1":
+"ember-cli-htmlbars@npm:^4.2.0, ember-cli-htmlbars@npm:^4.3.1":
   version: 4.4.1
   resolution: "ember-cli-htmlbars@npm:4.4.1"
   dependencies:
@@ -8504,13 +8529,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cli-import-polyfill@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "ember-cli-import-polyfill@npm:0.2.0"
-  checksum: 8a26860b4419c1ca0b8d304c86a450276a70a121a3790f46bc4a7717d475b5dd644a816b454980cd40147af5859aac1b83cedf610ff9186e0a42bfddb6d32f3a
-  languageName: node
-  linkType: hard
-
 "ember-cli-inject-live-reload@npm:^2.1.0":
   version: 2.1.0
   resolution: "ember-cli-inject-live-reload@npm:2.1.0"
@@ -8562,25 +8580,6 @@ __metadata:
     ember-qunit:
       optional: true
   checksum: 459aed2d946ebb9d378e30b3b902157df4378ffc2f1686fa7179ee031240a1733d0b516c5813855ef701c2cc7359b2dccc7a60ddad87f7a5140a4057b5645b5a
-  languageName: node
-  linkType: hard
-
-"ember-cli-moment-shim@npm:^3.7.1":
-  version: 3.8.0
-  resolution: "ember-cli-moment-shim@npm:3.8.0"
-  dependencies:
-    broccoli-funnel: ^2.0.0
-    broccoli-merge-trees: ^2.0.0
-    broccoli-source: ^1.1.0
-    broccoli-stew: ^1.5.0
-    chalk: ^1.1.3
-    ember-cli-babel: ^7.1.2
-    ember-cli-import-polyfill: ^0.2.0
-    ember-get-config: ""
-    lodash.defaults: ^4.2.0
-    moment: ^2.19.3
-    moment-timezone: ^0.5.13
-  checksum: aefe8f276337d7b7551a30ac852a59cea7ec2295161ef2d61251755f158cb66ecc433027e0d689eeb36eddff960ebf53ef7519f87e171ad18178dffd633b217b
   languageName: node
   linkType: hard
 
@@ -9157,16 +9156,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-get-config@npm:, ember-get-config@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "ember-get-config@npm:1.0.2"
-  dependencies:
-    "@embroider/macros": ^0.50.0 || ^1.0.0
-    ember-cli-babel: ^7.26.6
-  checksum: 641241ea4937ac431ab777974362ec0ae410cd694ab3f658ff073aa321916f98ea6b12bf179306ab7c7fd74405d2bef3c77f371b47c9ad35e7479c3dc20db63a
-  languageName: node
-  linkType: hard
-
 "ember-get-config@npm:0.2.4 - 0.5.0":
   version: 0.5.0
   resolution: "ember-get-config@npm:0.5.0"
@@ -9185,6 +9174,16 @@ __metadata:
     broccoli-file-creator: ^1.1.1
     ember-cli-babel: ^7.0.0
   checksum: 1860cd143f916bda201170877d341f64807ab0f0498413a49876a78b69e606139b62ec5df91b19d1d235660318840e8c2d4798e5f570a948d3382e226097839d
+  languageName: node
+  linkType: hard
+
+"ember-get-config@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "ember-get-config@npm:1.0.2"
+  dependencies:
+    "@embroider/macros": ^0.50.0 || ^1.0.0
+    ember-cli-babel: ^7.26.6
+  checksum: 641241ea4937ac431ab777974362ec0ae410cd694ab3f658ff073aa321916f98ea6b12bf179306ab7c7fd74405d2bef3c77f371b47c9ad35e7479c3dc20db63a
   languageName: node
   linkType: hard
 
@@ -9402,15 +9401,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-pikaday@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "ember-pikaday@npm:3.0.0"
+"ember-pikaday@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "ember-pikaday@npm:4.0.0"
   dependencies:
-    ember-cli-babel: ^7.17.2
-    ember-cli-htmlbars: ^4.2.2
-    ember-cli-moment-shim: ^3.7.1
-    pikaday: ^1.8.0
-  checksum: 2f042f7df2809a4799d89fa5a81bdefcc48a78cc58123c8ad673e92dda2e677f623672f41a75f7e2b4049e21459e55216bdd3c35032ce4bb3c195d5217da06e9
+    "@embroider/addon-shim": ^0.50.2
+    ember-modifier: ^3.0.0
+  peerDependencies:
+    "@ember/test-helpers": ^2
+    moment: ^2
+    moment-timezone: ^0.5.34
+  peerDependenciesMeta:
+    "@ember/test-helpers":
+      optional: true
+    moment:
+      optional: true
+    moment-timezone:
+      optional: true
+  checksum: 8988bdf2849b48796aefbefbb9b86e79690049d431ecdb3bd0327ea3599d9a3df4ae53abcbc50f7cecb7ffaaa35e86abb4969be96b4e76375af026d4ab6d19a0
   languageName: node
   linkType: hard
 
@@ -15264,7 +15272,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"moment-timezone@npm:^0.5.13, moment-timezone@npm:^0.5.33":
+"moment-timezone@npm:^0.5.33":
   version: 0.5.34
   resolution: "moment-timezone@npm:0.5.34"
   dependencies:
@@ -15273,7 +15281,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"moment@npm:>= 2.9.0, moment@npm:^2.19.3, moment@npm:^2.29.1":
+"moment@npm:>= 2.9.0, moment@npm:^2.29.1":
   version: 2.29.1
   resolution: "moment@npm:2.29.1"
   checksum: 1e14d5f422a2687996be11dd2d50c8de3bd577c4a4ca79ba5d02c397242a933e5b941655de6c8cb90ac18f01cc4127e55b4a12ae3c527a6c0a274e455979345e
@@ -16847,13 +16855,6 @@ __metadata:
   version: 4.0.1
   resolution: "pify@npm:4.0.1"
   checksum: 9c4e34278cb09987685fa5ef81499c82546c033713518f6441778fbec623fc708777fe8ac633097c72d88470d5963094076c7305cafc7ad340aae27cfacd856b
-  languageName: node
-  linkType: hard
-
-"pikaday@npm:^1.8.0":
-  version: 1.8.2
-  resolution: "pikaday@npm:1.8.2"
-  checksum: 579e9397f4f40cf98879b41dcc958d2a055aac213e9c3a5cee3e81585e72d4c925facbd9942453a873053ca957407d9ed0cbd226c165fd59cab5b780b7db718a
   languageName: node
   linkType: hard
 
